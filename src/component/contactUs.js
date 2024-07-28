@@ -1,18 +1,11 @@
 import location_logo from '../assests/images/location_logo.png';
-import './contactUs.css'
+import '../assests/css/common.css'
 
 export const ContactUs = () => {
-    const about_div = {
-        // display: "inline-flex",
-        margin: "0 10%",
-        flexWrap: "wrap",
-        // border : "2px solid red"
-    }
-
     
     return (
         <>
-            <div className="" style={about_div}>
+            <div className="">
                 <h4>Contact US</h4>
                 <hr style={{ margin: "auto", padding: "10px" }} />
                 <div className="contact-us-div">

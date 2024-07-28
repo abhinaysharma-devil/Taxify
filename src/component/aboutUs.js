@@ -1,13 +1,9 @@
+import '../assests/css/common.css'
+
 export const AboutUS = () => {
-    const about_div = {
-        // display: "inline-flex",
-        margin: "0 10%",
-        flexWrap : "wrap",
-        // border : "2px solid red"
-    }
     return (
         <>
-            <div className="" style={about_div}>
+            <div className="service-detail-v1" >
                 <h4>ABOUT US</h4>
                 <hr style={{ margin : "auto", padding : "10px" }}/>
                 <p>

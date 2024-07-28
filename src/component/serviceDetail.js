@@ -1,16 +1,10 @@
 import gst_img from '../assests/images/gst_img.png';
-import './contactUs.css'
+import '../assests/css/common.css'
 
 export const ServiceDetail = () => {
-    const about_div = {
-        margin: "0 10%",
-        flexWrap: "wrap",
-    }
-
-
     return (
         <>
-            <div className="" style={about_div}>
+            <div className="service-detail-v1" >
                 <h1>GST</h1>
                 <hr style={{ margin: "auto", padding: "10px" }} />
                 <div className="service-div">

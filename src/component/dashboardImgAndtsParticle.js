@@ -2,14 +2,10 @@ import React, { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import taxImg from '../assests/images/tax_img_1.jpg';
-import './contactUs.css'
-
-
+import '../assests/css/common.css'
 
 const ParticlesContainer = () => {
-  // this customizes the component tsParticles installation
   const customInit = useCallback(async (main) => {
-    // this adds the bundle to tsParticlesd
     await loadSlim(main);
   }, []);
   const options = {
@@ -519,12 +515,10 @@ const ParticlesContainer = () => {
     }
   }
 
-  
-
   return (
     <>
-    <div className="dashboard-img-div" height="40vh" id="tsparticles" >
-      <Particles options={options} init={customInit} style={{height: "50vh"}} />
+    <div className="dashboard-img-div" id="tsparticles" >
+      <Particles options={options} init={customInit} />
     </div>
     </>
   )
