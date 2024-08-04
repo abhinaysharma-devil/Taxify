@@ -1,11 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { serviceDetails } from '../../src/data/dataset';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+// import gstImg from '../assests/images/';
+
 
 export const Header = () => {
+
+  const [serviceState, setServiceState] = useState(serviceDetails)
+  const navigate = useNavigate()
+
+  function gotoServices(item) {
+    navigate("/services/x", { state: { data: item } })
+  }
+
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="/">Taxify</a>
+      <nav className="navbar navbar-expand-lg navbar-light">
+        {/* <a className="navbar-brand" href="/">Taxify</a> */}
+        <img src="taxify-logo-png.png" alt="" width="100px"/>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -23,10 +37,15 @@ export const Header = () => {
                 Services
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <Link className="nav-link" to="/services/gst">GST</Link>
-                <a className="dropdown-item" href="#">TDS</a>
-                <div className="dropdown-divider"></div>
-                <a className="dropdown-item" href="#">Something else here</a>
+                {serviceState.map((item, index) => {
+                  console.log(item.id)
+                  return (
+                    <>
+                      <a className="dropdown-item" key={index} onClick={() => { gotoServices(item) }}>{item.service_title}</a>
+                      {/* <div className="dropdown-divider"></div> */}
+                    </>
+                  )
+                })}
               </div>
             </li>
             <li className="nav-item">
@@ -34,8 +53,8 @@ export const Header = () => {
             </li>
           </ul>
           <form className="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
       </nav>

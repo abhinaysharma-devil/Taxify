@@ -1,23 +1,29 @@
 import gst_img from '../assests/images/gst_img.png';
 import '../assests/css/common.css'
+import { useLocation } from 'react-router-dom';
 
 export const ServiceDetail = () => {
+    const location = useLocation();
     return (
         <>
             <div className="service-detail-v1" >
-                <h1>GST</h1>
+                <h1>{location.state.data.service_title}</h1>
                 <hr style={{ margin: "auto", padding: "10px" }} />
                 <div className="service-div">
                     <img src={gst_img} style={{ width: "500px" }} />
                     <div className="text-item">
-                        <h2>Why is it necessary to verify the GST Number?</h2>
-                        <p>
-                            A GSTIN or GST number is public information. GST search by name is an important task that every business dealing with GST-registered taxpayers must carry out to ensure the authenticity of the vendor and the GSTIN or GST number being used in the invoice. <br /><br />
-
-                            You can partly verify the GSTIN or GST number on the first look by checking if the vendor’s PAN number matches with the digits between 3 and 10 in the GSTIN. <br /><br />
-
-                            It is also necessary to carry out a thorough check of the GSTIN authenticity to avoid generating incorrect invoices and e-invoices, to claim a genuine input tax credit, and to pass on the tax credits to rightful buyers, to mention a few.
-                        </p>
+                        <h2>{location.state.data.service_sub_title}</h2>
+                        <p>{location.state.data.detail}</p>
+                        <h2>What we do?</h2>
+                        <ul>
+                            {location.state.data.what_we_do?.map((item)=>{
+                                return (
+                                    <>
+                                    <li key={item.id} >{item.title}</li>
+                                    </>
+                                )
+                            })}
+                        </ul>
                     </div>
                 </div>
             </div>

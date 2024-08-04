@@ -7,7 +7,9 @@ export const AboutUS = () => {
                 <h4>ABOUT US</h4>
                 <hr style={{ margin : "auto", padding : "10px" }}/>
                 <p>
-                    GST Tax Solution. In was established in the year 2017. An accounting and tax consulting firm rendering comprehensive professional services which include audit, management consultancy, tax consultancy, accounting services, manpower management, secretarial services etc.
+                    Taxify services, An accounting and tax consulting firm rendering comprehensive professional services which include audit, management consultancy, tax consultancy, accounting services, manpower management, secretarial services etc.
+<br />
+                    Taxify services. In is a professionally managed firm. The team consists of distinguished chartered accountants, company secretary, corporate financial advisors and tax consultants.
                 </p>
             </div>
         </>
