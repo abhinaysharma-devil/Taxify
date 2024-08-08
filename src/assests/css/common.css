@@ -1,3 +1,102 @@
+/*  slider css */
+
+.top-slider {
+    /* font-family: Montserrat; */
+    margin-top: 5px;
+    font-family: "Commissioner", sans-serif;
+    text-align: center;
+    color: #006600;
+    font-size: 21px;
+    padding-top: 0vh;
+    overflow: hidden;
+}
+
+.top-slider-div  {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.top-slider-div:first-of-type {
+    animation: appear 6s infinite;
+}
+
+.top-slider-div:last-of-type {
+    animation: reveal 6s infinite;
+}
+
+.top-slider-div:last-of-type span {
+    font-size:20px;
+    color: var(--orange-color);
+    animation: slide 6s infinite;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slide {
+    0% {
+        margin-left: -800px;
+    }
+
+    20% {
+        margin-left: -800px;
+    }
+
+    35% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+
+    30% {
+        width: 290px;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        width: 290px;
+    }
+}
+/* ********************* */
+
+.font-family-class {
+    font-family: "Commissioner", sans-serif;
+}
+
 .contact-items-location {
     padding: 10px 0 0 5px;
     border: 2px solid rgb(222, 222, 222);
@@ -30,29 +129,21 @@
 
 #tsparticles {
     position: absolute;
-    /* left: calc(50% - 100px); */
-    /* top: calc(50% - 100px); */
-    margin: 0;
-    padding: 0;
-    width: 100vw;
+    margin-top: 22px;
+    width: 100%;
     height: 50vh;
     z-index: 10;
 }
 
 .service-detail-v1 {
-    margin: 5% 15%;
+    margin: 1% 15%;
     flex-wrap: wrap;
-}
-
-.footer-main-div {
-    position: relative;
-    top: 1rem;
 }
 
 .cards {
-    display: inline-flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
     margin: 0 15%;
-    flex-wrap: wrap;
 }
 
 .card-title {

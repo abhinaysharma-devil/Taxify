@@ -3,12 +3,11 @@ import { Link } from 'react-router-dom';
 import { serviceDetails } from '../../src/data/dataset';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-// import gstImg from '../assests/images/';
 
 
 export const Header = () => {
 
-  const [serviceState, setServiceState] = useState(serviceDetails)
+  const [serviceState] = useState(serviceDetails)
   const navigate = useNavigate()
 
   function gotoServices(item) {
@@ -17,7 +16,7 @@ export const Header = () => {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light">
+      <nav className="navbar navbar-expand-lg navbar-light" style={{ boxShadow: "0px 0px 3px 0px gray"}}>
         {/* <a className="navbar-brand" href="/">Taxify</a> */}
         <img src="taxify-logo-png.png" alt="" width="100px"/>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,11 +37,9 @@ export const Header = () => {
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                 {serviceState.map((item, index) => {
-                  console.log(item.id)
                   return (
                     <>
                       <a className="dropdown-item" key={index} onClick={() => { gotoServices(item) }}>{item.service_title}</a>
-                      {/* <div className="dropdown-divider"></div> */}
                     </>
                   )
                 })}
