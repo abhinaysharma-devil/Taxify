@@ -56,8 +56,8 @@ const Contact = () => {
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900">Address</h4>
                   <p className="text-gray-600">
-                    123 Business District, Financial Hub<br />
-                    Mumbai, Maharashtra 400001<br />
+                    Ratanpur Colony<br />
+                    Kanpur, Uttar Pradesh 208001<br />
                     India
                   </p>
                 </div>
@@ -73,7 +73,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900">Phone</h4>
-                  <p className="text-gray-600">+91 98765 43210</p>
+                  <p className="text-gray-600">+91 88967 10095</p>
                 </div>
               </div>
 
@@ -87,7 +87,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900">Email</h4>
-                  <p className="text-gray-600">info@taxify.co.in</p>
+                  <p className="text-gray-600">savitanivesh@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -95,7 +95,7 @@ const Contact = () => {
             <div className="mt-8">
               <div className="bg-white rounded-lg shadow-lg p-1 h-64">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.9874940499996!2d72.8776!3d19.0760!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9b10b03f5e1%3A0x8d1c8c8c8c8c8c8c!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14020.167!2d80.2216302!3d26.4838916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
                   className="w-full h-full rounded-lg"
                   style={{ border: 0 }}
                   allowFullScreen
@@ -175,7 +175,7 @@ const Contact = () => {
       {/* WhatsApp Floating Button */}
       <div className="fixed bottom-6 right-6 z-50">
         <a
-          href="https://wa.me/919876543210"
+          href="https://wa.me/918896710095"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 animate-float"

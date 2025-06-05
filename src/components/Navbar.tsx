@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
+import taxify_logo from '../../public/taxify-logo-png.png';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,7 +29,8 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <div className="text-2xl font-bold text-gray-900">
-              <span className="text-accent">Tax</span>ify
+              {/* <span className="text-accent">Tax</span>ify */}
+              <img src={taxify_logo} alt="" width={150} />
             </div>
           </div>
           

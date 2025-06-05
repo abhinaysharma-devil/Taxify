@@ -1,6 +1,8 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import itr_img from '../../public/itr_img.jpg';
+import tax_img from '../../public/tax.jpg';
 
 const Services = () => {
   const services = [
@@ -21,7 +23,7 @@ const Services = () => {
       title: "TDS",
       subtitle: "Tax Deducted at Source Management",
       description: "Complete TDS compliance and management services to ensure accurate deductions and timely deposits.",
-      image: "https://images.unsplash.com/photo-1554224154-26032fced8bd?w=400&h=250&fit=crop",
+      image: tax_img,
       whatWeDo: [
         "TDS Calculation & Deduction",
         "Quarterly TDS Return Filing",
@@ -60,7 +62,7 @@ const Services = () => {
       title: "ITR",
       subtitle: "Income Tax Return Filing",
       description: "Expert income tax return preparation and filing services for individuals and businesses.",
-      image: "https://images.unsplash.com/photo-1554224154-26032fced8bd?w=400&h=250&fit=crop",
+      image: itr_img,
       whatWeDo: [
         "Individual ITR Filing",
         "Business ITR Filing",
