@@ -1,6 +1,5 @@
-# Welcome to your Lovable project
-
-## Project info
+# Taxify
+It is a static website showcasing the UI. You can check out the hosted site here: https://taxify.co.in
 
 **URL**: https://lovable.dev/projects/2bfe9a46-ec85-4bb1-95a2-c72fe72a1c54
 
